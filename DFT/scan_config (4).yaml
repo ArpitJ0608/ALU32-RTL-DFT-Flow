@@ -1,0 +1,39 @@
+dffMatches:
+      - name: dfcrq1
+        d: D
+        q: Q
+        qn: QN
+        clk: CP
+        reset: CDN
+
+scanMatches:
+
+      - name: sdnrq1      
+        d: D
+        q: Q
+        clk: CP
+        scanIn: SD          
+        scanEnable: SC
+
+scanPorts:
+        scanEnable: scan_en
+chains:
+      - name: chain_0
+        scanIn: scan_in0
+        scanOut: scan_out0
+
+      - name: chain_1
+        scanIn: scan_in1
+        scanOut: scan_out1
+
+      - name: chain_2
+        scanIn: scan_in2
+        scanOut: scan_out2
+
+      - name: chain_3
+        scanIn: scan_in3
+        scanOut: scan_out3
+
+      - name: chain_4
+        scanIn: scan_in4
+        scanOut: scan_out4
