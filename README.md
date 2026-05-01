@@ -33,7 +33,9 @@ A complete Design for Testability (DFT) flow for a 32-bit ALU. This project feat
 | `3'b100` | Bitwise XOR |
 | `3'b101` | Bitwise NAND |
 
-##  Repository Structure
+## Repository Structure
+
+```text
 alu32-rtl-to-gds/
 │
 ├── rtl/
@@ -60,8 +62,11 @@ alu32-rtl-to-gds/
 │   └── alu_golden_output.bin                 # Expected output vectors
 │
 └── README.md
+```
 
-**Project Flow**
+## Project Flow
+
+```text
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │ RTL Design (ALU_32.v)                                                       │
 │       |                                                                     │
@@ -70,7 +75,7 @@ alu32-rtl-to-gds/
 │       |                                                                     │
 │       ▼                                                                     │
 │ Synthesis ─────────────── Yosys + OSU018 liberty                            │
-│       |                   731 cells, 33 FFs, Chip area: 10565.36units²       │
+│       |                   731 cells, 33 FFs, Chip area: 10565.36 units²     │
 │       |                                                                     │
 │       ▼                                                                     │
 │ Gate Level Simulation ─── Icarus Verilog (with stdcell models)              │
@@ -88,6 +93,6 @@ alu32-rtl-to-gds/
 │       |    fault cut   → combinational design extraction                    │
 │       |    fault atpg  → 2463 fault sites, 97.56% coverage, 40 test vectors │
 │       |    fault asm   → assembled binary test vectors                      │
-│       |                                                                     │
-|
+│                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘
+```
