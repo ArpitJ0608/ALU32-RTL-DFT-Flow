@@ -23,7 +23,7 @@ module alu_tb_32;
   initial begin
     clk=0;
     rst=1;
-   $sdf_annotate("delay_sdf.sdf", uut);
+    $sdf_annotate("delay_sdf.sdf", uut);
     $dumpfile("alu_wv.vcd");
     $dumpvars(0,alu_tb_32);
     $monitor("Time=%f | a=%d, b=%d, sel=%b, out=%d, carry_out=%b",$realtime, a, b, sel, out, carry_out);
