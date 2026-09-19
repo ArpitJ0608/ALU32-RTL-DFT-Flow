@@ -11,7 +11,7 @@ dfflibmap -liberty /home/coe-10/Desktop/Technology_PDKs/SCLPDK_V3.0_KIT/scl180/s
 opt;
 
 techmap; opt;
-abc /home/coe-10/Desktop/Technology_PDKs/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib
+abc -liberty /home/coe-10/Desktop/Technology_PDKs/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib
 
 clean -purge
 stat -liberty /home/coe-10/Desktop/Technology_PDKs/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib
